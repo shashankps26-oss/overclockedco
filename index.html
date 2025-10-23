@@ -8,27 +8,7 @@
 </head>
 <body>
     <!-- Fixed Navigation Header -->
-    <nav class="navbar" id="navbar">
-        <div class="nav-container">
-            <div class="logo">
-                <span class="logo-text">Overclocked Co.</span>
-            </div>
-            <div class="menu-toggle" id="menuToggle">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
-            <div class="nav-menu" id="navMenu">
-                <ul class="nav-links">
-                    <li><a href="#home" class="nav-link">Home</a></li>
-                    <li><a href="#services" class="nav-link">Services</a></li>
-                    <li><a href="#builds" class="nav-link">Builds</a></li>
-                    <li><a href="#reviews" class="nav-link">Reviews</a></li>
-                    <li><a href="#contact" class="nav-link">Contact</a></li>
-                </ul>
-            </div>
-        </div>
-    </nav>
+    <div id="navbar-placeholder"></div>
 
     <!-- Hero Section -->
     <section id="home" class="hero">
@@ -106,19 +86,19 @@
         <div class="container">
             <h2 class="section-title">Featured <span class="gradient-text">Builds</span></h2>
             <div class="builds-grid">
-                <div class="build-card" onclick="openModal('entry')">
+                <div class="build-card" onclick="navigateToPage('entry-gaming.html')">
                     <div class="build-icon">🎮</div>
                     <h3 class="build-name">Entry Gaming</h3>
                     <p class="build-price">₹61,999 onwards</p>
                     <p class="build-desc">Perfect for 1080p gaming and esports titles</p>
                 </div>
-                <div class="build-card" onclick="openModal('performance')">
+                <div class="build-card" onclick="navigateToPage('performance-beast.html')">
                     <div class="build-icon">⚡</div>
                     <h3 class="build-name">Performance Beast</h3>
                     <p class="build-price">₹1,05,000 onwards</p>
                     <p class="build-desc">High-end 1440p and 4K gaming powerhouse</p>
                 </div>
-                <div class="build-card" onclick="openModal('ultimate')">
+                <div class="build-card" onclick="navigateToPage('ultimate-workstation.html')">
                     <div class="build-icon">💎</div>
                     <h3 class="build-name">Ultimate Workstation</h3>
                     <p class="build-price">₹4,50,000 onwards</p>
@@ -263,9 +243,7 @@
 
     <!-- Footer -->
     <footer class="footer">
-        <div class="container">
-            <p>&copy; 2025 Overclocked Co. Crafted with precision and passion.</p>
-        </div>
+        <div id="footer-placeholder"></div>
     </footer>
 
     <script src="app.js"></script>
