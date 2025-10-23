@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
+    <title>Overclocked Co. - Professional PC Building Service</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Fixed Navigation Header -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <span class="logo-text">Overclocked Co.</span>
+            </div>
+            <div class="menu-toggle" id="menuToggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="nav-menu" id="navMenu">
+                <ul class="nav-links">
+                    <li><a href="#home" class="nav-link">Home</a></li>
+                    <li><a href="#services" class="nav-link">Services</a></li>
+                    <li><a href="#builds" class="nav-link">Builds</a></li>
+                    <li><a href="#reviews" class="nav-link">Reviews</a></li>
+                    <li><a href="#contact" class="nav-link">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="circuit-background"></div>
+        <div class="hero-container">
+            <div class="hero-content">
+                <h1 class="hero-title animate-fade-up">Build Your <span class="gradient-text">Dream PC</span></h1>
+                <p class="hero-subtitle animate-fade-up">Custom gaming and workstation PCs built to perfection</p>
+                <button class="cta-button animate-fade-up" onclick="scrollToSection('builds')">Explore Builds</button>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Why Choose Us Section -->
+    <section id="why-choose-us" class="why-choose-us">
+        <div class="container">
+            <h2 class="section-title">Why Choose <span class="gradient-text">Overclocked Co.</span></h2>
+            <div class="why-choose-grid">
+                <div class="why-choose-card">
+                    <div class="why-choose-icon">🎮</div>
+                    <h3 class="why-choose-title">Convenience</h3>
+                    <p class="why-choose-description">Building gaming PCs is a hobby on its own. If you're more interested in jumping into high-quality gaming action right away, a custom prebuilt is a great route to take. We handle everything so you can game immediately.</p>
+                </div>
+                <div class="why-choose-card">
+                    <div class="why-choose-icon">🎯</div>
+                    <h3 class="why-choose-title">Precision</h3>
+                    <p class="why-choose-description">Buying a custom PC from Overclocked Co. ensures that your components are expertly chosen to maximize your budget and deliver the best possible performance. Every part is carefully selected for optimal compatibility and power.</p>
+                </div>
+                <div class="why-choose-card">
+                    <div class="why-choose-icon">✨</div>
+                    <h3 class="why-choose-title">Aesthetics</h3>
+                    <p class="why-choose-description">Let's be clear - aesthetics are a top priority for everything at Overclocked Co. If you want a beautiful conversation-starter in your gaming setup, our builds are designed to impress with premium RGB lighting and cable management.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services">
+        <div class="container">
+            <h2 class="section-title">Our <span class="gradient-text">Services</span></h2>
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">🎮</div>
+                    <h3 class="service-title">Gaming PCs</h3>
+                    <p class="service-description">High-performance gaming rigs optimized for the latest AAA titles and competitive gaming. Custom cooling solutions and RGB lighting.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">⚙️</div>
+                    <h3 class="service-title">Custom Builds</h3>
+                    <p class="service-description">Fully customized builds tailored to your exact specifications. Choose every component and aesthetic detail to match your vision.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">🔧</div>
+                    <h3 class="service-title">Upgrades &amp; Repairs</h3>
+                    <p class="service-description">Upgrade existing systems or repair hardware issues. Expert diagnostics and component replacement services available.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">🎨</div>
+                    <h3 class="service-title">Aesthetic Mods</h3>
+                    <p class="service-description">Custom cable management, RGB synchronization, and unique case modifications to make your build stand out.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Builds Section -->
+    <section id="builds" class="builds">
+        <div class="container">
+            <h2 class="section-title">Featured <span class="gradient-text">Builds</span></h2>
+            <div class="builds-grid">
+                <div class="build-card" onclick="openModal('entry')">
+                    <div class="build-icon">🎮</div>
+                    <h3 class="build-name">Entry Gaming</h3>
+                    <p class="build-price">₹61,999 onwards</p>
+                    <p class="build-desc">Perfect for 1080p gaming and esports titles</p>
+                </div>
+                <div class="build-card" onclick="openModal('performance')">
+                    <div class="build-icon">⚡</div>
+                    <h3 class="build-name">Performance Beast</h3>
+                    <p class="build-price">₹1,05,000 onwards</p>
+                    <p class="build-desc">High-end 1440p and 4K gaming powerhouse</p>
+                </div>
+                <div class="build-card" onclick="openModal('ultimate')">
+                    <div class="build-icon">💎</div>
+                    <h3 class="build-name">Ultimate Workstation</h3>
+                    <p class="build-price">₹4,50,000 onwards</p>
+                    <p class="build-desc">Professional workstation for creators</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Customer Testimonials Section -->
+    <section id="reviews" class="testimonials">
+        <div class="container">
+            <h2 class="section-title">What Our <span class="gradient-text">Customers Say</span></h2>
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <div class="quote-mark">"</div>
+                    <p class="testimonial-text">Absolutely amazing build quality! The cable management is pristine and my RTX 4080 build runs like a dream. The team was professional and delivered exactly what I wanted.</p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">A</div>
+                        <div class="author-info">
+                            <div class="author-name">Arjun Patel</div>
+                            <div class="author-role">Gaming Enthusiast</div>
+                            <div class="rating">⭐⭐⭐⭐⭐</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="quote-mark">"</div>
+                    <p class="testimonial-text">Best decision ever! My custom workstation handles 4K video editing and 3D rendering flawlessly. The attention to detail and component selection was top-notch.</p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">P</div>
+                        <div class="author-info">
+                            <div class="author-name">Priya Sharma</div>
+                            <div class="author-role">Content Creator</div>
+                            <div class="rating">⭐⭐⭐⭐⭐</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="quote-mark">"</div>
+                    <p class="testimonial-text">Incredible service from start to finish. They helped me choose the perfect components within my budget and the RGB setup looks stunning! Highly recommend.</p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">R</div>
+                        <div class="author-info">
+                            <div class="author-name">Rahul Kumar</div>
+                            <div class="author-role">First-time Builder</div>
+                            <div class="rating">⭐⭐⭐⭐⭐</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="quote-mark">"</div>
+                    <p class="testimonial-text">Outstanding build for competitive gaming! My FPS is consistently high and the cooling system keeps everything running cool even during marathon sessions.</p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">S</div>
+                        <div class="author-info">
+                            <div class="author-name">Sneha Reddy</div>
+                            <div class="author-role">Esports Player</div>
+                            <div class="rating">⭐⭐⭐⭐⭐</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="quote-mark">"</div>
+                    <p class="testimonial-text">Great experience! They upgraded my old PC and it feels brand new. The performance boost is incredible and the pricing was very reasonable.</p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">V</div>
+                        <div class="author-info">
+                            <div class="author-name">Vikram Singh</div>
+                            <div class="author-role">Software Developer</div>
+                            <div class="rating">⭐⭐⭐⭐⭐</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="quote-mark">"</div>
+                    <p class="testimonial-text">Perfect workstation for my architecture projects! The rendering times have been cut in half. Professional service and great post-build support.</p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">M</div>
+                        <div class="author-info">
+                            <div class="author-name">Meera Iyer</div>
+                            <div class="author-role">Architect</div>
+                            <div class="rating">⭐⭐⭐⭐⭐</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">Get In <span class="gradient-text">Touch</span></h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <h3>Phone</h3>
+                        <p>7020872210</p>
+                        <p>8277238001</p>
+                    </div>
+                    <div class="contact-item">
+                        <h3>Business Hours</h3>
+                        <p>Mon - Sat: 10:00 AM - 8:00 PM</p>
+                        <p>Sunday: Closed</p>
+                    </div>
+                    <div class="contact-item">
+                        <h3>Quick Response</h3>
+                        <p>We typically respond within 24 hours to all inquiries</p>
+                    </div>
+                </div>
+                <div class="contact-form-container">
+                    <form class="contact-form" id="contactForm">
+                        <div class="form-group">
+                            <input type="text" id="name" name="name" class="form-input" placeholder="Your Name" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" id="email" name="email" class="form-input" placeholder="Your Email" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="tel" id="phone" name="phone" class="form-input" placeholder="Your Phone">
+                        </div>
+                        <div class="form-group">
+                            <select id="budget" name="budget" class="form-input">
+                                <option value="">Select Budget Range</option>
+                                <option value="under-50k">Under ₹50,000</option>
+                                <option value="50k-100k">₹50,000 - ₹1,00,000</option>
+                                <option value="100k-200k">₹1,00,000 - ₹2,00,000</option>
+                                <option value="200k-300k">₹2,00,000 - ₹3,00,000</option>
+                                <option value="above-300k">Above ₹3,00,000</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <textarea id="message" name="message" class="form-input" rows="5" placeholder="Tell us about your project requirements..."></textarea>
+                        </div>
+                        <button type="submit" class="submit-button">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 Overclocked Co. Crafted with precision and passion.</p>
+        </div>
+    </footer>
+
+    <!-- Build Modal -->
+    <div id="buildModal" class="modal">
+        <div class="modal-content">
+            <button class="modal-close" onclick="closeModal()">&times;</button>
+            <div class="modal-header">
+                <div class="modal-icon" id="modalIcon"></div>
+                <div class="modal-title-section">
+                    <h2 class="modal-title" id="modalTitle"></h2>
+                    <p class="modal-price" id="modalPrice"></p>
+                </div>
+            </div>
+            <div class="modal-body">
+                <div class="modal-specs">
+                    <h3>Specifications</h3>
+                    <table class="specs-table" id="specsTable">
+                        <!-- Specs will be populated by JavaScript -->
+                    </table>
+                </div>
+                <div class="modal-description">
+                    <h3>Description</h3>
+                    <p id="modalDescription"></p>
+                </div>
+            </div>
+            <div class="modal-actions">
+                <button class="action-button primary" onclick="scrollToContact()">Order This Build</button>
+                <button class="action-button secondary" onclick="scrollToContact()">Request Custom Build</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
